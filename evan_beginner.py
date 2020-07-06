@@ -4,7 +4,7 @@ Created on Tue Jun 30 17:05:11 2020
 
 @author: ajb22
 """
-
+"""
 #############################################################################
 ############### variables ###################################################
 # data types: 
@@ -125,14 +125,27 @@ def learningForLoops(my_num):
         out_str = out_str[1:]
     print(out_str)
 learningForLoops(100000000) 
-
+"""
 # fizz buzz
 
 # will need modulus - in python it is '%'
 # example 
 # 15 % 3 = 0
 # 16 % 3 = 1
+def fizzBuzz(fizz_num):
+    for buzz_num in range(1,fizz_num+1):
+        check1 = buzz_num % 3
+        check2 = buzz_num % 5
+        if check1 == 0 and check2 != 0:
+            print("Fizz")
+        if check1 != 0 and check2 == 0:
+            print("Buzz")
+        if check1 == 0 and check2 == 0:
+            print("Fizzbuzz")
+        if check1 != 0 and check2 != 0:
+            print(buzz_num)
 
+fizzBuzz(15)
 
 # integer to ascii and ascii to integer 
 # sorting        
