@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+import random
+import time 
+
 """
 Created on Tue Jun 30 17:05:11 2020
 
@@ -183,4 +186,14 @@ def sort(array):
         if bob == 0:
             break
     print(array)
-sort(array)
+
+#array_2 = []
+#length_array = 10000
+#for ii in range(length_array):
+#    array_2.append(random.randint(0, 100))
+#print("This is my random array of legnth {}:\n{}".format(length_array, array_2))
+#print("Now time to bubble sort...")
+#time1 = time.time()
+sort(array)  #sort(array_2) for long boi array
+#time2 = time.time()
+#print("This is how long it took to sort {}".format(time2 - time1))
