@@ -146,7 +146,7 @@ def fizzBuzz(fizz_num):
             print(buzz_num)
 
 fizzBuzz(15)
-"""
+
 # integer to ascii and ascii to integer 
 
 def ascii_to_int(ascii):
@@ -162,10 +162,14 @@ def int_to_ascii(int):
 
 int_to_ascii(6)
 
-
+"""
 # sorting
 
+# array = [31, 24, 84, 21, 90, 99, 32, 5, 87, 44]
+# >> sort(array)
+# [5, 21, 24, 31, 32, 44, 84, 87, 90, 99]
 
-
-
-
+# array = [5, 3, 4, 2]
+def sort(array):
+    for num in array:
+        
