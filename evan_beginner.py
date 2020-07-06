@@ -127,6 +127,13 @@ def learningForLoops(my_num):
 learningForLoops(100000000) 
 
 # fizz buzz
+
+# will need modulus - in python it is '%'
+# example 
+# 15 % 3 = 0
+# 16 % 3 = 1
+
+
 # integer to ascii and ascii to integer 
 # sorting        
             
