@@ -125,7 +125,7 @@ def learningForLoops(my_num):
         out_str = out_str[1:]
     print(out_str)
 learningForLoops(100000000) 
-"""
+
 # fizz buzz
 
 # will need modulus - in python it is '%'
@@ -146,10 +146,26 @@ def fizzBuzz(fizz_num):
             print(buzz_num)
 
 fizzBuzz(15)
-
+"""
 # integer to ascii and ascii to integer 
-# sorting        
-            
-            
-#Can bob the builder fix it?
-#hi there
+
+def ascii_to_int(ascii):
+    ascii_ans = ascii - 48
+    print(ascii_ans)
+
+ascii_to_int(52)
+
+
+def int_to_ascii(int):
+    int_ans = int + 48
+    print(int_ans)
+
+int_to_ascii(6)
+
+
+# sorting
+
+
+
+
+
