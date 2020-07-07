@@ -33,3 +33,25 @@ plt.show()
 #   - how to get something from the queue
 #   - how to get the neighboring nodes in network x grid (if I am in node (1,0) I want my neighbors to loop through (0,0), (2,0), (1,1)) 
 # hint: your frontier will be queue.Queue()
+
+# dictionary example 
+
+# family = { 'Abby' : [23, 'girl'], 'Maddie' : [20, 'girl'], 'Evan' : [17, 'boy'], 'Dad' : [50, 'boy'], 'Mom' : [45, 'girl'], 'Ally' : [26, 'girl']}
+
+# family
+# Out[10]: 
+# {'Abby': [23, 'girl'],
+#  'Maddie': [20, 'girl'],
+#  'Evan': [17, 'boy'],
+#  'Dad': [50, 'boy'],
+#  'Mom': [45, 'girl'],
+#  'Ally': [26, 'girl']}
+
+# family.keys()
+# Out[11]: dict_keys(['Abby', 'Maddie', 'Evan', 'Dad', 'Mom', 'Ally'])
+
+# family['Abby']
+# Out[12]: [23, 'girl']
+
+# family['Evan']
+# Out[13]: [17, 'boy']
