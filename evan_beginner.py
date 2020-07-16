@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
+import random
+import time 
+
 """
 Created on Tue Jun 30 17:05:11 2020
 
 @author: ajb22
 """
-
+"""
 #############################################################################
 ############### variables ###################################################
 # data types: 
@@ -132,10 +135,109 @@ learningForLoops(100000000)
 # example 
 # 15 % 3 = 0
 # 16 % 3 = 1
+def fizzBuzz(fizz_num):
+    for buzz_num in range(1,fizz_num+1):
+        check1 = buzz_num % 3
+        check2 = buzz_num % 5
+        if check1 == 0 and check2 != 0:
+            print("Fizz")
+        if check1 != 0 and check2 == 0:
+            print("Buzz")
+        if check1 == 0 and check2 == 0:
+            print("Fizzbuzz")
+        if check1 != 0 and check2 != 0:
+            print(buzz_num)
 
+fizzBuzz(15)
 
 # integer to ascii and ascii to integer 
-# sorting        
-            
-            
 
+def ascii_to_int(ascii):
+    ascii_ans = ascii - 48
+    print(ascii_ans)
+
+ascii_to_int(52)
+
+
+def int_to_ascii(int):
+    int_ans = int + 48
+    print(int_ans)
+
+int_to_ascii(6)
+
+
+# sorting
+
+array = [31, 24, 84, 21, 90, 99, 32, 5, 87, 44]
+# >> sort(array)
+# [5, 21, 24, 31, 32, 44, 84, 87, 90, 99]
+
+
+def sort(array):
+    while True:
+        bob = 0
+        for ii in range(len(array) - 1):
+            num1 = array[ii]
+            num2 = array[ii + 1]
+            if num1 > num2:
+                bob = 1
+                array[ii] = num2
+                array[ii + 1] = num1
+        if bob == 0:
+            break
+    print(array)
+
+#array_2 = []
+#length_array = 10000
+#for ii in range(length_array):
+#    array_2.append(random.randint(0, 100))
+#print("This is my random array of legnth {}:\n{}".format(length_array, array_2))
+#print("Now time to bubble sort...")
+#time1 = time.time()
+sort(array)  #sort(array_2) for long boi array
+#time2 = time.time()
+#print("This is how long it took to sort {}".format(time2 - time1))
+
+
+
+#classes and objects
+
+#class Dog:
+    # Class attributes
+    #species = "Canis familiaris"
+
+    #def __init__(self, name, age):
+        #self.name = name
+        #self.age = age
+
+    # Instance method
+    #def __str__(self):
+        #return f"{self.name} is {self.age} years old"
+
+    # Another instance method
+    #def speak(self, sound):
+        #return f"{self.name} says {sound}"
+
+#miles = Dog("Miles", 4)
+#print(miles)
+        
+class Dog:
+    species = "Canis familiaris"
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __str__(self):
+        return f"{self.name} is {self.age} years old"
+
+    def speak(self, sound):
+        return f"{self.name} says {sound}"
+
+class GoldenRetriever(Dog):
+    def speak(self, sound="Bark"):
+        return super().speak(sound)
+"""
+
+# it is the difference of calling the class with variables or calling the method with the variables
+# calculator =  Calculator(1,2) vs calculator = Calculator(); calculator.add(1, 2)
