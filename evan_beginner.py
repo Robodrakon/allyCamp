@@ -165,7 +165,7 @@ def int_to_ascii(int):
 
 int_to_ascii(6)
 
-"""
+
 # sorting
 
 array = [31, 24, 84, 21, 90, 99, 32, 5, 87, 44]
@@ -197,3 +197,47 @@ def sort(array):
 sort(array)  #sort(array_2) for long boi array
 #time2 = time.time()
 #print("This is how long it took to sort {}".format(time2 - time1))
+
+
+
+#classes and objects
+
+#class Dog:
+    # Class attributes
+    #species = "Canis familiaris"
+
+    #def __init__(self, name, age):
+        #self.name = name
+        #self.age = age
+
+    # Instance method
+    #def __str__(self):
+        #return f"{self.name} is {self.age} years old"
+
+    # Another instance method
+    #def speak(self, sound):
+        #return f"{self.name} says {sound}"
+
+#miles = Dog("Miles", 4)
+#print(miles)
+        
+class Dog:
+    species = "Canis familiaris"
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __str__(self):
+        return f"{self.name} is {self.age} years old"
+
+    def speak(self, sound):
+        return f"{self.name} says {sound}"
+
+class GoldenRetriever(Dog):
+    def speak(self, sound="Bark"):
+        return super().speak(sound)
+"""
+
+# it is the difference of calling the class with variables or calling the method with the variables
+# calculator =  Calculator(1,2) vs calculator = Calculator(); calculator.add(1, 2)

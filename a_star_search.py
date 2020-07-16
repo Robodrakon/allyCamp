@@ -55,3 +55,20 @@ plt.show()
 
 # family['Evan']
 # Out[13]: [17, 'boy']
+# Out[13]: [17, 'boy']
+
+frontier = queue.Queue()
+frontier.put(start)
+visited = []
+seen = []
+seen.append(start)
+
+while frontier.empty() == False:
+    position = frontier.get()
+    visited.append(position)
+    for neighbor in K.neighbors(position):
+        if neighbor not in seen:
+            frontier.put(neighbor)
+            seen.append(neighbor)
+print(seen)
+
