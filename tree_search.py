@@ -23,8 +23,10 @@ for i in range(3):
         
         if j == 0:
             G.add_edge("0", str(node_name))
+            #G.add_edge(str(node_name), "0")
         else:
             G.add_edge(str(node_name-1), str(node_name))
+            #G.add_edge(str(node_name), str(node_name-1))
         node_name += 1
         
 
@@ -49,4 +51,12 @@ nx.draw_networkx_labels(G, pos=pos, labels=labels, font_size = 22, font_color = 
 plt.show()
 plt.savefig('nx_tree.png')
 
+#############################################################################
+# solution #
+
+
+            
+
+        
+    
 
